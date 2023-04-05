@@ -88,6 +88,10 @@
     .body {
         padding: 20% 10%;
     }
+    body {
+        font-size: 16px;
+        
+    }
     .community-card {
         width: 100%;
     }
@@ -96,7 +100,7 @@
         padding: 10px 20px;
     }
     .subscription {
-        padding: 20px 20px 40px 20px;
+        padding: 20px 10px 40px 20px;
     }
     .why-us {
         padding: 20px 20px;
