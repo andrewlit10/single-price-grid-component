@@ -1,0 +1,115 @@
+.body {
+    background-color:hsl(218, 22%, 67%);
+    padding: 25% 25%;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.community-card {
+   
+    background-color: rgb(255, 255, 255);
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+   
+}
+
+.community {
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+.community p {
+    color: hsl(218, 22%, 67%);
+}
+.join {
+    color: hsl(179, 62%, 43%);
+}
+.thirty-day {
+    color:hsl(71, 73%, 54%);
+}
+.subscription {
+    padding: 15px 50px;
+    grid-area: subscription;
+    color:hsl(204, 43%, 93%);
+    background-color:hsl(179, 62%, 43%);
+    
+}
+
+
+.twenty-nine  {
+    color: white;
+    font-size: 24px;
+    display: inline-block;
+    padding-right: 5px;
+}
+.button {
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+    padding: 10px 75px;
+    border-radius: 5px;
+    border-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.button-div {
+    
+    top: 50%;
+    left: 50%;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "subscription why-us" ;
+        grid-template-columns: 50%;
+    border-radius: 0px 0px 5px 5px;
+    
+}
+.why-us {
+    
+    padding: 15px 50px;
+    grid-area: why-us;
+    color:hsl(204, 43%, 93%);
+    background-color:hsl(179, 59%, 55%);
+}
+.why-us h3 {
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .body {
+        padding: 20% 10%;
+    }
+    .community-card {
+        width: 100%;
+    }
+    .community {
+        grid-area: community;
+        padding: 10px 20px;
+    }
+    .subscription {
+        padding: 20px 20px 40px 20px;
+    }
+    .why-us {
+        padding: 20px 20px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "community"
+        "subscription"
+        "why-us";
+    }
+    .body {
+        font-size: 12px;
+    }
+}
